@@ -1,0 +1,8 @@
+<button (click)="mostrarLista = !mostrarLista"></button>
+
+
+<ul *ngIf="mostrarLista">
+    <li *ngFor="let listaNomes of listaNomes">{{listaNomes}}</li>
+</ul>
+
+

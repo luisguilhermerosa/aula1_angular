@@ -8,6 +8,7 @@ import { App } from './app';
 @NgModule({
   declarations: [
     App,
+  
     
   ],
   imports: [
