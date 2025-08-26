@@ -1,5 +1,9 @@
-<button (click)="mostrarLista = !mostrarLista"></button>
+<button (click)="toggleLista()">ocultar e visualizar</button>
 
+<div style="margin-top: 10px">
+    <button (click)="aumentarFonte()">+</button>
+    <button (click)="diminuirFonte()">-</button>
+</div>
 
 <ul *ngIf="mostrarLista">
     <li *ngFor="let listaNomes of listaNomes">{{listaNomes}}</li>

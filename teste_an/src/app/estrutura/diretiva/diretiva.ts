@@ -7,12 +7,27 @@ import { Component } from '@angular/core';
   styleUrl: './diretiva.css'
 })
 export class Diretiva {
+mostrarLista: boolean = true;
+fontSize = 16;
 
 listaNomes = [
   {id: '234',nome:'Luis', ativo: 'true'},
   {id: '597',nome:'Thiago', inativo:'false'},
-]
+];
 
-mostrarLista: boolean = true;
+toggleLista(){
+  this.mostrarLista = !this.mostrarLista;
+}
+
+aumentarFonte(){
+  this.fontSize +=5;
+  
+}
+
+diminuirFonte(){
+  this.fontSize -=5;
+}
+
+
 
 }
