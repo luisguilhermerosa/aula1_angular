@@ -1,12 +1,14 @@
 <button (click)="toggleLista()">ocultar e visualizar</button>
 
-<div style="margin-top: 10px">
+<div style="font-size: 10px">
     <button (click)="aumentarFonte()">+</button>
     <button (click)="diminuirFonte()">-</button>
 </div>
 
-<ul *ngIf="mostrarLista">
-    <li *ngFor="let listaNomes of listaNomes">{{listaNomes}}</li>
+<ul *ngIf="mostrarLista" [style.font-size.px]="tamanhoFonte">
+    <li *ngFor="let item of listaNome"> 
+        {{ item.id}} - {{item.nome}} - {{item.estadoAtivo}}
+    </li>
 </ul>
 
 

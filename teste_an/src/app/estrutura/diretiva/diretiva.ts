@@ -8,11 +8,11 @@ import { Component } from '@angular/core';
 })
 export class Diretiva {
 mostrarLista: boolean = true;
-fontSize = 16;
+tamanhoFonte = 16;
 
-listaNomes = [
-  {id: '234',nome:'Luis', ativo: 'true'},
-  {id: '597',nome:'Thiago', inativo:'false'},
+listaNome = [
+  {id: '234',nome:'Luis', estadoAtivo: 'inativo' },
+  {id: '597',nome:'Thiago', estadoAtivo: 'ativo' },
 ];
 
 toggleLista(){
@@ -20,14 +20,15 @@ toggleLista(){
 }
 
 aumentarFonte(){
-  this.fontSize +=5;
+  this.tamanhoFonte +=2;
   
 }
 
 diminuirFonte(){
-  this.fontSize -=5;
+  if (this.tamanhoFonte > 25)
+  this.tamanhoFonte -=2;
+}
+
 }
 
 
-
-}
