@@ -7,12 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './estoque.css'
 })
 export class Estoque {
-mostrarMensagem = true;
+mostrarLista: boolean = true;
 
 
   produtos =[
-     {nome: 'geladeira', preco:'6000', estoque:'20'},
-     {nome: 'micro-ondas', preco:'3200', estoque:'0'}
+     {nome: 'geladeira', preco:'R$ 6000', estoque: 20},
+     {nome: 'micro-ondas', preco:'R$ 3200', estoque:0}
 
   ];
 

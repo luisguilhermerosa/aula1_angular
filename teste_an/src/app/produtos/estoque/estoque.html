@@ -1,2 +1,11 @@
 <p>estoque works!</p>
 
+<ul *ngIf="mostrarLista">
+    <li *ngFor="let item of produtos"> 
+        {{ item.nome}} 
+         {{item.preco}}
+        <p *ngIf="item.estoque > 0" style="color: green;" >Disponivel</p>
+        <p *ngIf="item.estoque == 0" style = "color: red;" >Indisponivel</p>
+    </li>
+</ul>
+
