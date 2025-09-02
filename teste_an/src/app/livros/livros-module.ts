@@ -12,6 +12,6 @@ import { Cadastrar } from './cadastrar/cadastrar';
   imports: [
     CommonModule,
     LivrosRoutingModule
-  ]
+  ],
 })
 export class LivrosModule { }
