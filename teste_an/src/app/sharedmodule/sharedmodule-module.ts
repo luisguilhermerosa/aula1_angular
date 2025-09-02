@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Botaocomponent } from './botaocomponent/botaocomponent';
 
+import { SharedmoduleRoutingModule } from './sharedmodule-routing-module';
+import { Botaocomponent } from './botaocomponent/botaocomponent';
 
 
 @NgModule({
@@ -9,7 +10,8 @@ import { Botaocomponent } from './botaocomponent/botaocomponent';
     Botaocomponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedmoduleRoutingModule
   ],
   exports: [
     Botaocomponent

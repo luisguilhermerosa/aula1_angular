@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 })
 export class Botaocomponent {
 
-botao(){
-
-}
+  botao() {
+    
+  }
 
 }
