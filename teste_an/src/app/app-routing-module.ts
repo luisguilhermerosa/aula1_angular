@@ -26,9 +26,12 @@ const routes: Routes = [
 
      path: 'produtos-module',
     loadChildren: () => import('./produtosmodule/produtosmodule-module').then(n => n.ProdutosmoduleModule)
-   }
+   },
      
-  
+  {
+     path: 'shared-module',
+    loadChildren: () => import('./sharedmodule/sharedmodule-module').then(n => n.SharedmoduleModule)
+   }
   
 
 
