@@ -31,8 +31,15 @@ const routes: Routes = [
   {
      path: 'shared-module',
     loadChildren: () => import('./sharedmodule/sharedmodule-module').then(n => n.SharedmoduleModule)
-   }
+   },
   
+     {
+        path: 'toolbar',
+    loadChildren: () => import('./toolbar/toolbar-module').then(n => n.ToolbarModule)
+     }
+ 
+   
+
 
 
 ];
