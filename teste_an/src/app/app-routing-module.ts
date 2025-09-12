@@ -36,12 +36,12 @@ const routes: Routes = [
      {
         path: 'toolbar',
     loadChildren: () => import('./toolbar/toolbar-module').then(n => n.ToolbarModule)
+     },
+
+    {
+        path: 'dados',
+    loadChildren: () => import('./dados/dados-module').then(n => n.DadosModule)
      }
- 
-   
-
-
-
 ];
 
 @NgModule({

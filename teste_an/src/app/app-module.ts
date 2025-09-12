@@ -8,6 +8,7 @@ import { ToolbarModule } from './toolbar/toolbar-module';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatTableModule } from '@angular/material/table';
 
 
 
@@ -27,8 +28,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     ToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatToolbarModule
-
+    MatToolbarModule,
+    MatTableModule
 
   ],
   providers: [
