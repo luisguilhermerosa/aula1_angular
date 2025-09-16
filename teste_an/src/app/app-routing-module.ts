@@ -41,7 +41,12 @@ const routes: Routes = [
     {
         path: 'dados',
     loadChildren: () => import('./dados/dados-module').then(n => n.DadosModule)
+     },
+     { 
+             path: 'funcionario',
+    loadChildren: () => import('./funcionario/funcionario-module').then(n => n.FuncionarioModule)
      }
+
 ];
 
 @NgModule({

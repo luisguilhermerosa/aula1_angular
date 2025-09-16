@@ -1,0 +1,8 @@
+<button (click)="mostrarLista()">Mostrar Lista</button>
+<button (click)=" ocultarLista()">Ocultar Lista</button>
+
+<ul *ngIf="listaVisivel">
+    <li *ngFor="let item of listaFuncionario"> 
+    {{item.nome}} - {{item.salario}}
+    </li>
+</ul>
